@@ -15,7 +15,7 @@ public class AccountPage extends PageObject{
    @FindBy(css=".header-minicart ")
    private WebElementFacade cart;
 
-   @FindBy(css=".cart-link")
+   @FindBy(css="a.cart-link")
    private WebElementFacade cartLink;
 
 public String accountMessage(){
@@ -28,8 +28,8 @@ public void headerCart(){
 }
 
 public void viewShoppingCart(){
-    waitFor(cart);
-    cart.click();
+    //element(cart).waitUntilVisible();
+    cartLink.click();
 }
 
 }

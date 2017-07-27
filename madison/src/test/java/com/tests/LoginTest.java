@@ -46,6 +46,19 @@ public class LoginTest {
     @Steps
     public EndUserSteps shoppingCartstep;
 
+    @Steps
+    public EndUserSteps clearQuantityStep;
+
+    @Steps
+    public EndUserSteps modifyQuantityStep;
+
+    @Steps
+    public EndUserSteps updatequantityStep;
+
+    @Steps
+    public EndUserSteps clickInTheQuantityFieldStep;
+
+
 
     @Before
     public void maximize(){
@@ -66,6 +79,12 @@ public class LoginTest {
         cartButtonStep.clickOnTheCartIcon();
         cartLinkStep.clickOnViewShoppingCart();
         shoppingCartstep.verifyIfUserIsInShoppingCart("SHOPPING CART");
+        clickInTheQuantityFieldStep.clickInTheQuantityField();
+        clearQuantityStep.clearTheQuantity();
+        System.out.println("Crystal Clear");
+        modifyQuantityStep.modifyTheQuantityInShoppingCart("5");
+        System.out.println();
+        updatequantityStep.clickOnTheUpdateButton();
 
     }
 

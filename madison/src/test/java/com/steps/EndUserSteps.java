@@ -24,6 +24,10 @@ public class EndUserSteps extends ScenarioSteps{
     AccountPage cartButton;
     AccountPage goToCartLink;
     ShoppingCartPage shoppingTextMessage;
+    ShoppingCartPage qtyField;
+    ShoppingCartPage modifyQty;
+    ShoppingCartPage updateClick;
+    ShoppingCartPage activateClick;
 
     @Step
     public void navigateTo(String url) {
@@ -84,7 +88,23 @@ public class EndUserSteps extends ScenarioSteps{
     public void verifyIfUserIsInShoppingCart(String expectedMessage){
         String message=shoppingTextMessage.shoppingCartMessage();
         Assert.assertTrue("You are not in shopping cart: ",expectedMessage.contentEquals(message));
+    }
+    @Step
+    public void clickInTheQuantityField(){
+        activateClick.activateQuantityField();
+    }
+    @Step
+    public void clearTheQuantity(){
+        qtyField.clearQuantity();
+    }
+    @Step
+    public void modifyTheQuantityInShoppingCart(String qty){
+        modifyQty.modifyQuantity(qty);
 
+    }
+    @Step
+    public void clickOnTheUpdateButton(){
+        updateClick.updateButton();
     }
 
 
