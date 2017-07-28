@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login test","Negative data type","SUCCESS","2017-07-27T11:07:14.156-07:00[America/Los_Angeles]","0.0","17.33"
+"Login test","Click on account","ERROR","2017-07-27T11:07:51.630-07:00[America/Los_Angeles]","0.0","20.66"
+"Login test","Negative data type for login","SUCCESS","2017-07-27T16:43:13.342-07:00[America/Los_Angeles]","0.0","17.26"
+"Login test","Click on account and login","SUCCESS","2017-07-27T16:48:30.824-07:00[America/Los_Angeles]","0.0","44.04"

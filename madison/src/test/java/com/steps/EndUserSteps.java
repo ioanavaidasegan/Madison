@@ -13,98 +13,88 @@ import static org.hamcrest.Matchers.hasItem;
 
 public class EndUserSteps extends ScenarioSteps{
 
-    HomePage openHomePage;
-    HomePage clickAccountLink;
-    HomePage clickOnTheLoginPage;
-    RedirectToLoginPage enterMailData;
-    RedirectToLoginPage enterPasswordData;
-    AccountPage accountTextMessage;
-    RedirectToLoginPage logInButton;
-    RedirectToLoginPage invalidData;
-    AccountPage cartButton;
-    AccountPage goToCartLink;
-    ShoppingCartPage shoppingTextMessage;
-    ShoppingCartPage qtyField;
-    ShoppingCartPage modifyQty;
-    ShoppingCartPage updateClick;
-    ShoppingCartPage activateClick;
+
+    HomePage homePage;
+    RedirectToLoginPage redirectToLoginPage;
+    AccountPage accountPage;
+    ShoppingCartPage shoppingCartPage;
+
 
     @Step
     public void navigateTo(String url) {
-        openHomePage.navigateToUrl(url);
+        homePage.navigateToUrl(url);
     }
 
     @Step
     public void clickOnTheAccountLink() {
-        clickAccountLink.clickAccountLink();
+        homePage.clickAccountLink();
     }
 
     @Step
     public void clickOnTheLoginLink(){
-        clickOnTheLoginPage.accountOptions();
+        homePage.accountOptions();
     }
 
     @Step
     public void inputMailData(String mail){
-        enterMailData.inputDataMail(mail);
+        redirectToLoginPage.inputDataMail(mail);
     }
 
     @Step
     public void inputPasswordData(String passw){
-        enterPasswordData.inputDataPassword(passw);
+        redirectToLoginPage.inputDataPassword(passw);
     }
 
     @Step
     public void pressTheLoginButton(){
-        logInButton.pressLogin();
+        redirectToLoginPage.pressLogin();
     }
-
 
     @Step
     public void verifyIfTheUserIsLoggedin(String expectedMessage){
-        String messageAccount=accountTextMessage.accountMessage().toUpperCase();
+        String messageAccount= accountPage.accountMessage().toUpperCase();
         System.out.println("message: " + messageAccount);
         System.out.println("given: " + expectedMessage);
         Assert.assertTrue("You are not in the account: ", expectedMessage.contentEquals(messageAccount));
     }
 
     @Step
-    public void verifyIfInvalidUserIsRejected(String expectedMessage){
-        String message=invalidData.messageForInvalidLogIn();
-        Assert.assertTrue("The username or password is invalid: ",expectedMessage.contentEquals(message));
+    public void verifyIfInvalidUserIsRejected(String expected){
+        String message=redirectToLoginPage.messageForInvalidLogIn();
+        Assert.assertTrue("The username or password is invalid: ",expected.contentEquals(message));
     }
 
     @Step
     public void clickOnTheCartIcon(){
-        cartButton.headerCart();
+        accountPage.headerCart();
     }
 
     @Step
     public void clickOnViewShoppingCart(){
-        goToCartLink.viewShoppingCart();
+        accountPage.viewShoppingCart();
     }
 
     @Step
     public void verifyIfUserIsInShoppingCart(String expectedMessage){
-        String message=shoppingTextMessage.shoppingCartMessage();
+        String message= shoppingCartPage.shoppingCartMessage();
         Assert.assertTrue("You are not in shopping cart: ",expectedMessage.contentEquals(message));
     }
     @Step
     public void clickInTheQuantityField(){
-        activateClick.activateQuantityField();
+        shoppingCartPage.activateQuantityField();
     }
     @Step
     public void clearTheQuantity(){
-        qtyField.clearQuantity();
+        shoppingCartPage.clearQuantity();
     }
     @Step
     public void modifyTheQuantityInShoppingCart(String qty){
-        modifyQty.modifyQuantity(qty);
+        shoppingCartPage.modifyQuantity(qty);
 
     }
     @Step
     public void clickOnTheUpdateButton(){
-        updateClick.updateButton();
+        shoppingCartPage.updateButton();
     }
 
 

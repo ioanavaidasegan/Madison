@@ -1,102 +1,73 @@
 package com.tests;
 
+import javafx.application.Application;
+import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.*;
 
+import net.thucydides.core.pages.Pages;
+import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import com.steps.EndUserSteps;
+import sun.security.pkcs11.wrapper.Constants;
 
-@RunWith(SerenityRunner.class)
+@RunWith(SerenityParameterizedRunner.class)
+@UseTestDataFrom(value= "CSV/Login.csv")
 public class LoginTest {
 
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
-    @Steps
-    public EndUserSteps openHomePageStep;
+    @ManagedPages(defaultUrl="CSV")
+    public Pages pages;
 
     @Steps
-    public EndUserSteps clickAccountLinkStep;
-
-    @Steps
-    public EndUserSteps clickOnTheLoginPageStep;
-
-    @Steps
-    public EndUserSteps enterMailDataStep;
-
-    @Steps
-    public EndUserSteps enterPasswordDataStep;
-
-    @Steps
-    public EndUserSteps pressloginStep;
-
-    @Steps
-    public EndUserSteps accountMessageStep;
-
-    @Steps
-    public EndUserSteps cartButtonStep;
-
-    @Steps
-    public EndUserSteps cartLinkStep;
-
-    @Steps
-    public EndUserSteps shoppingCartstep;
-
-    @Steps
-    public EndUserSteps clearQuantityStep;
-
-    @Steps
-    public EndUserSteps modifyQuantityStep;
-
-    @Steps
-    public EndUserSteps updatequantityStep;
-
-    @Steps
-    public EndUserSteps clickInTheQuantityFieldStep;
-
+    public EndUserSteps endUserSteps;
+    String mail,password;
 
 
     @Before
-    public void maximize(){
+    public void maximize()
+    {
     webdriver.manage().window().maximize();
     }
 
     @Test
     public void clickOnAccountAndLogin() {
 
-        openHomePageStep.navigateTo("http://qa2.madison.com");
-        clickAccountLinkStep.clickOnTheAccountLink();
-        clickOnTheLoginPageStep.clickOnTheLoginLink();
+        endUserSteps.navigateTo("http://qa2.madison.com");
+        endUserSteps.clickOnTheAccountLink();
+        endUserSteps.clickOnTheLoginLink();
         System.out.println("Am ajuns la mail: ");
-        enterMailDataStep.inputMailData("test@gmail.com");
-        enterPasswordDataStep.inputPasswordData("test11");
-        pressloginStep.pressTheLoginButton();
-        accountMessageStep.verifyIfTheUserIsLoggedin("MY DASHBOARD");
-        cartButtonStep.clickOnTheCartIcon();
-        cartLinkStep.clickOnViewShoppingCart();
-        shoppingCartstep.verifyIfUserIsInShoppingCart("SHOPPING CART");
-        clickInTheQuantityFieldStep.clickInTheQuantityField();
-        clearQuantityStep.clearTheQuantity();
+        endUserSteps.inputMailData(mail);
+        endUserSteps.inputPasswordData(password);
+        endUserSteps.pressTheLoginButton();
+        endUserSteps.verifyIfTheUserIsLoggedin("MY DASHBOARD");
+        endUserSteps.clickOnTheCartIcon();
+        endUserSteps.clickOnViewShoppingCart();
+        endUserSteps.verifyIfUserIsInShoppingCart("SHOPPING CART");
+        endUserSteps.clickInTheQuantityField();
+        endUserSteps.clearTheQuantity();
         System.out.println("Crystal Clear");
-        modifyQuantityStep.modifyTheQuantityInShoppingCart("5");
+        endUserSteps.modifyTheQuantityInShoppingCart("5");
         System.out.println();
-        updatequantityStep.clickOnTheUpdateButton();
+        endUserSteps.clickOnTheUpdateButton();
 
     }
 
     @Test
     public void negativeDataTypeForLogin(){
-        openHomePageStep.navigateTo("http://qa2.madison.com");
-        clickAccountLinkStep.clickOnTheAccountLink();
-        clickOnTheLoginPageStep.clickOnTheLoginLink();
+        endUserSteps.navigateTo("http://qa2.madison.com");
+        endUserSteps.clickOnTheAccountLink();
+        endUserSteps.clickOnTheLoginLink();
         System.out.println("Am ajuns la mail: ");
-        enterMailDataStep.inputMailData("test11@gmail.com");
-        enterPasswordDataStep.inputPasswordData("test11");
-        pressloginStep.pressTheLoginButton();
-        accountMessageStep.verifyIfInvalidUserIsRejected("Invalid login or password.");
+        endUserSteps.inputMailData("test11@gmail.com");
+        endUserSteps.inputPasswordData("test11");
+        endUserSteps.pressTheLoginButton();
+        endUserSteps.verifyIfInvalidUserIsRejected("Invalid login or password.");
     }
 } 

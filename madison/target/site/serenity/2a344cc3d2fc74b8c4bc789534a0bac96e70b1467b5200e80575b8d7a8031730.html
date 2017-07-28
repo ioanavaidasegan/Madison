@@ -61,7 +61,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-07-2017 16:02</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-07-2017 17:23</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -110,9 +110,37 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3 class="story-header">Scenario Outline</h3>
+
+        <div class="scenario">Navigate to: http://qa2.madison.com<br>Click on the account link<br>Click on the login link<br>Input mail data: &lt;mail&gt;<br>Input password data: &lt;password&gt;<br>Press the login button<br>Verify if the user is loggedin: MY DASHBOARD<br>Click on the cart icon<br>Click on view shopping cart<br>Verify if user is in shopping cart: SHOPPING CART<br>Click in the quantity field<br>Clear the quantity<br>Modify the quantity in shopping cart: 5<br>Click on the update button</div>
+
+    </div>
 
     <div id="beforetable"></div>
 
+
+        <h3 class="story-header">Examples:</h3>
+        <div class="example-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                        <th>Mail</th>
+                        <th>Password</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">test@gmail.com</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">test11</a>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     <div id="tablecontents">
         <div>
@@ -134,12 +162,39 @@
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Navigate to: http://qa2.madison.com</span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
+                               style="display:block;">
+                            <span class="top-level-step">Click on account and login </span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">41.38s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection0" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Navigate to: http://qa2.madison.com</span>
 
                         </div>
                     </td>
@@ -152,18 +207,18 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">3.25s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3.34s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Click on the account link</span>
+                            <span class="nested-group-step">Click on the account link</span>
 
                         </div>
                     </td>
@@ -176,18 +231,18 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">1.39s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.49s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="2"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Click on the login link</span>
+                            <span class="nested-group-step">Click on the login link</span>
 
                         </div>
                     </td>
@@ -200,47 +255,47 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.76s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.84s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="3"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Input mail data: test@gmail.com</span>
+                            <span class="nested-group-step">Input mail data: test@gmail.com</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=4">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="8a57f43edcec77c2f68f2268235d8b5c75124763d54f8e2bf714752df0d69303.png"
-                                         href="8a57f43edcec77c2f68f2268235d8b5c75124763d54f8e2bf714752df0d69303.png"
+                                    <img src="1ea8a2c0b220c3bd9a59acc10b708e1e0510d12b9ff7678c6435535c07a5d923.png"
+                                         href="1ea8a2c0b220c3bd9a59acc10b708e1e0510d12b9ff7678c6435535c07a5d923.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.83s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.84s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="4"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Input password data: test11</span>
+                            <span class="nested-group-step">Input password data: test11</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=5">
+                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=6">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="ca1b05dae25f7304d62c9bbee2db4f713821da52c87c5760403bd5959128e268.png"
                                          href="ca1b05dae25f7304d62c9bbee2db4f713821da52c87c5760403bd5959128e268.png"
@@ -248,23 +303,23 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.89s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.85s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="5"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Press the login button</span>
+                            <span class="nested-group-step">Press the login button</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=6">
+                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=7">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="8d78a40c0a0cc961a97fb232c9dcf0757e4bfb4e41bc923e8de515e23bb5e1d4.png"
                                          href="8d78a40c0a0cc961a97fb232c9dcf0757e4bfb4e41bc923e8de515e23bb5e1d4.png"
@@ -272,205 +327,209 @@
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">7.86s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.54s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="6"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Verify if the user is loggedin: MY DASHBOARD</span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=8">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2bb24cea329cbe6d9c0ef9ab76640b05b198c4b36fd85fb9209861cb4eacc893.png"
-                                         href="2bb24cea329cbe6d9c0ef9ab76640b05b198c4b36fd85fb9209861cb4eacc893.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.8s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        <a name="7"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="top-level-step">Click on the cart icon</span>
+                            <span class="nested-group-step">Verify if the user is loggedin: MY DASHBOARD</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=9">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="c86d4a0e3f1a5ecd709c7fdef464d5094af41f175316337567b81807f45d3644.png"
-                                         href="c86d4a0e3f1a5ecd709c7fdef464d5094af41f175316337567b81807f45d3644.png"
+                                    <img src="5fa6e5f01b9e84bcfc73f390424d9b4440a02622d34e24db612c58a0418487b1.png"
+                                         href="5fa6e5f01b9e84bcfc73f390424d9b4440a02622d34e24db612c58a0418487b1.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.9s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.82s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="8"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Click on view shopping cart</span>
+                            <span class="nested-group-step">Click on the cart icon</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=10">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="7436b9336087ad0533d90225e7c6c2a686a0a6daca199f28fcdc58a5a2f60d0b.png"
-                                         href="7436b9336087ad0533d90225e7c6c2a686a0a6daca199f28fcdc58a5a2f60d0b.png"
+                                    <img src="4f49120d46c30a78712d75e255a0f935f547110c7653b811fba3a1fa9d7be17f.png"
+                                         href="4f49120d46c30a78712d75e255a0f935f547110c7653b811fba3a1fa9d7be17f.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">7.04s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.88s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="9"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Verify if user is in shopping cart: SHOPPING CART</span>
+                            <span class="nested-group-step">Click on view shopping cart</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=11">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="7436b9336087ad0533d90225e7c6c2a686a0a6daca199f28fcdc58a5a2f60d0b.png"
-                                         href="7436b9336087ad0533d90225e7c6c2a686a0a6daca199f28fcdc58a5a2f60d0b.png"
+                                    <img src="4ad0b5ed9bc005f6caff6e322ed16c9eacc5299c6cd5da20dfd51632c4ef77a6.png"
+                                         href="4ad0b5ed9bc005f6caff6e322ed16c9eacc5299c6cd5da20dfd51632c4ef77a6.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.8s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">6.34s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="10"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Click in the quantity field</span>
+                            <span class="nested-group-step">Verify if user is in shopping cart: SHOPPING CART</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=12">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="1f7c6ac84f26e56a68811039df69d7be36133e5647f06faff55ec9472cc5ba13.png"
-                                         href="1f7c6ac84f26e56a68811039df69d7be36133e5647f06faff55ec9472cc5ba13.png"
+                                    <img src="4ad0b5ed9bc005f6caff6e322ed16c9eacc5299c6cd5da20dfd51632c4ef77a6.png"
+                                         href="4ad0b5ed9bc005f6caff6e322ed16c9eacc5299c6cd5da20dfd51632c4ef77a6.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.9s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.81s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="11"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Clear the quantity</span>
+                            <span class="nested-group-step">Click in the quantity field</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=13">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="21860233cbafe4a89eca8b2a708a03623088d818d971275626955e38a5dc7ff8.png"
-                                         href="21860233cbafe4a89eca8b2a708a03623088d818d971275626955e38a5dc7ff8.png"
+                                    <img src="666d6b502862f3c9fbb67ad55a9482c55c1e0289fc7c6d119e5b7991e7632aeb.png"
+                                         href="666d6b502862f3c9fbb67ad55a9482c55c1e0289fc7c6d119e5b7991e7632aeb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.86s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.86s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="12"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Modify the quantity in shopping cart: 5</span>
+                            <span class="nested-group-step">Clear the quantity</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=15">
+                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=14">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="3c51e78b81a62650a609419f8f25080f54bcfb729bb215686350230ba428ce87.png"
-                                         href="3c51e78b81a62650a609419f8f25080f54bcfb729bb215686350230ba428ce87.png"
+                                    <img src="1059019101c18c6e10d76e843d45d7fea125eebe4fea9a166ad5d73eeae7bcdb.png"
+                                         href="1059019101c18c6e10d76e843d45d7fea125eebe4fea9a166ad5d73eeae7bcdb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.84s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.92s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
-                        <a name="13"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="top-level-step">Click on the update button</span>
+                            <span class="nested-group-step">Modify the quantity in shopping cart: 5</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=17">
+                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=16">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f56729a5acf766fb35bf77a09ac13e5d7017abc0e768bb0b11ccd400c2b3cfb8.png"
-                                         href="f56729a5acf766fb35bf77a09ac13e5d7017abc0e768bb0b11ccd400c2b3cfb8.png"
+                                    <img src="8cac350b6dc58474b5446220874487ea5a50232b2db50c4b47eb982592552763.png"
+                                         href="8cac350b6dc58474b5446220874487ea5a50232b2db50c4b47eb982592552763.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">14.25s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.88s</span></td>
                 </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Click on the update button</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="2a344cc3d2fc74b8c4bc789534a0bac96e70b1467b5200e80575b8d7a8031730_screenshots.html#screenshots?screenshot=18">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="1059019101c18c6e10d76e843d45d7fea125eebe4fea9a166ad5d73eeae7bcdb.png"
+                                         href="1059019101c18c6e10d76e843d45d7fea125eebe4fea9a166ad5d73eeae7bcdb.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">13.98s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
                 <tr class="test-SUCCESS">
                     <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>47.58s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>41.38s</em></span></td>
                 </tr>
 
             </table>
